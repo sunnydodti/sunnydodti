@@ -1,0 +1,88 @@
+{
+    "sunny": {
+        "projects": [
+            {
+                "name": "Expense Tracker",
+                "description": "A simple expense tracker app",
+                "url": "",
+                "repo": "https://github.com/sunnydodti/expense-tracker",
+                "techStack": [
+                    "Flutter",
+                    "SQLite",
+                    "Supabase",
+                    "Gen AI"
+                ]
+            },
+            {
+                "name": "Authenticator",
+                "description": "A Time based 2Factor Authenticatin App",
+                "url": "https://authenticator.persist.site",
+                "repo": "https://github.com/sunnydodti/authenticator",
+                "techStack": [
+                    "Flutter",
+                    "SQLite"
+                ]
+            },
+            {
+                "name": "KiwiClock",
+                "description": "Cloud CLock - An app for sharing timed events",
+                "url": "https://kiwiclock.persist.site",
+                "repo": "https://github.com/sunnydodti/kiwiclock",
+                "techStack": [
+                    "Flutter",
+                    "NoSQL",
+                    "Supabase"
+                ]
+            },
+            {
+                "name": "PearPin",
+                "description": "A Simple Password Generator",
+                "url": "https://pearpin.persist.site",
+                "repo": "https://github.com/sunnydodti/pearpin",
+                "techStack": [
+                    "Flutter",
+                    "NoSQL"
+                ]
+            },
+            {
+                "name": "Currency Converter",
+                "description": "A simple currency converter app",
+                "url": "https://currencyconverter.persist.site",
+                "repo": "https://github.com/sunnydodti/currency_converter",
+                "techStack": [
+                    "Flutter",
+                    "NoSQL"
+                ]
+            },
+            {
+                "name": "Url Shortner",
+                "description": "A simple URL shortner",
+                "url": "https://urls.persist.site",
+                "repo": "https://github.com/sunnydodti/url-shortner",
+                "techStack": [
+                    "Flutter",
+                    "Supabase",
+                    "Neon",
+                    "PostgreSQL",
+                    "NodeJS",
+                    "Cloudflare",
+                    "Wrangler"
+                ]
+            },
+            {
+                "name": "LilyPad",
+                "description": "A text sharing app, as simple as a lily pad",
+                "url": "https://lilypad.persist.site",
+                "repo": "https://github.com/sunnydodti/lillypad",
+                "techStack": [
+                    "Flutter",
+                    "Neon",
+                    "PostgreSQL",
+                    "NodeJS",
+                    "Cloudflare",
+                    "Wrangler"
+                ]
+            }   
+        ]
+    }
+}
