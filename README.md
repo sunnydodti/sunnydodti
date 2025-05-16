@@ -4,26 +4,16 @@
 
 ###
 
+<h2 align="center">Developer at heart. I like to build app as a hobby</h2>
+
+###
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=sunnydodti&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=github_dark&locale=en&hide_border=false&order=1&custom_title=My%20Stats" height="150" alt="stats graph"  />
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=sunnydodti&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=6&theme=github_dark&hide_border=false&order=2&custom_title=My%20Languages" height="150" alt="languages graph"  />
   <img src="https://streak-stats.demolab.com?user=sunnydodti&locale=en&mode=weekly&theme=github_dark&hide_border=false&border_radius=5&date_format=j%20M%5B%20Y%5D&order=3" height="150" alt="streak graph"  />
   <img src="https://github-profile-trophy.vercel.app?username=sunnydodti&theme=darkhub&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=sunnydodti&radius=16&theme=github-dark&area=true&order=5&custom_title=My%20Contributions" height="300" alt="activity-graph graph"  />
-</div>
-
-###
-
-<div align="center">
-  <a href="https://www.linkedin.com/in/sunnydodti/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo"  />
-  </a>
-  <a href="https://discord.com/users/294832188049063937" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="discord logo"  />
-  </a>
-  <a href="sunnydodti@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo"  />
-  </a>
 </div>
 
 ###
@@ -66,6 +56,61 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" height="40" alt="microsoftsqlserver logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+</div>
+
+###
+
+<h3 align="center">Projects</h3>
+
+<div align="left">
+
+  <p>Here are some <strong>apps</strong> I've built:</p>
+
+  <ul>
+    <li>
+      🚀 <strong>Expense Tracker</strong> – A powerful personal finance <strong>app</strong> with AI-powered bill scanning, smart alerts, and budget planning. <br />
+      🔗 <a href="https://expense-tracker.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/expense-tracker" target="_blank">GitHub</a>
+    </li>
+    <li>
+      🔗 <strong>URL Shortener</strong> – A minimal, no-login URL shortening <strong>app</strong> built with Flutter and Supabase. <br />
+      🔗 <a href="https://urls.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/url-shortener" target="_blank">GitHub</a>
+    </li>
+    <li>
+      🔐 <strong>Authenticator</strong> – A secure 2FA <strong>authenticator app</strong> supporting TOTP, QR code scanning, and offline access with SQLite. <br />
+      🔗 <a href="https://authenticator.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/authenticator" target="_blank">GitHub</a>
+    </li>
+    <li>
+      🔑 <strong>PearPin</strong> – A handy <strong>password generator app</strong> with adjustable complexity and a clean UI. <br />
+      🔗 <a href="https://pearpin.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/password-generator" target="_blank">GitHub</a>
+    </li>
+    <li>
+      ⏱️ <strong>KiwiClock</strong> – A simple timer <strong>app</strong> with cloud sync and multi-device support. <br />
+      🔗 <a href="https://kiwiclock.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/kiwiclock" target="_blank">GitHub</a>
+    </li>
+    <li>
+      💱 <strong>Currency Converter</strong> – A clean and minimal web <strong>app</strong> for converting currencies. <br />
+      🔗 <a href="https://sunnydodti.github.io/currency_converter" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/currency_converter" target="_blank">GitHub</a>
+    </li>
+  </ul>
+
+</div>
+
+###
+
+<p align="center">I'm open for collaborations. Please reach out</p>
+
+###
+
+<div align="center">
+  <a href="https://www.linkedin.com/in/sunnydodti/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo"  />
+  </a>
+  <a href="https://discord.com/users/294832188049063937" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="discord logo"  />
+  </a>
+  <a href="sunnydodti@gmail.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo"  />
+  </a>
 </div>
 
 ###
