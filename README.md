@@ -4,7 +4,7 @@
 
 ###
 
-<h2 align="center">Developer at heart. I like to build app as a hobby</h2>
+<h2 align="center">Developer at heart. Building apps is my hobby</h2>
 
 ###
 
@@ -64,7 +64,7 @@
 
 <div align="left">
 
-  <p>Here are some <strong>apps</strong> I've built:</p>
+  <p>Here are some apps I've built. all are cross platform</p>
 
   <ul>
     <li>
@@ -72,12 +72,12 @@
       🔗 <a href="https://expense-tracker.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/expense-tracker" target="_blank">GitHub</a>
     </li>
     <li>
-      🔗 <strong>URL Shortener</strong> – A minimal, no-login URL shortening <strong>app</strong> built with Flutter and Supabase. <br />
-      🔗 <a href="https://urls.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/url-shortener" target="_blank">GitHub</a>
-    </li>
-    <li>
       🔐 <strong>Authenticator</strong> – A secure 2FA <strong>authenticator app</strong> supporting TOTP, QR code scanning, and offline access with SQLite. <br />
       🔗 <a href="https://authenticator.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/authenticator" target="_blank">GitHub</a>
+    </li>
+    <li>
+      🌐 <strong>URL Shortener</strong> – A minimal, no-login URL shortening <strong>app</strong> built with Flutter and Supabase. <br />
+      🔗 <a href="https://urls.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/url-shortener" target="_blank">GitHub</a>
     </li>
     <li>
       🔑 <strong>PearPin</strong> – A handy <strong>password generator app</strong> with adjustable complexity and a clean UI. <br />
