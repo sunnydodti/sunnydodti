@@ -97,7 +97,15 @@
 
 ###
 
-<p align="center">I'm open for collaborations. Please reach out</p>
+<div align="center">
+  <a href="https://github.com/sunnydodti/resume/blob/main/Sunny_Dodti.pdf" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Resume&logo=adobeacrobatreader&label=&color=DC143C&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="resume logo"  />
+  </a>
+</div>
+
+###
+
+<p align="center">I'm open for collaborations. Lets Connect</p>
 
 ###
 
