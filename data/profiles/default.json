@@ -76,7 +76,13 @@
                     "ChartGPT",
                     "Figma"
                 ]
-            }
+            },
+            "projects": [
+                "W1",
+                "W2",
+                "W3",
+                "W4"
+            ]
         },
         {
             "id": 2,
@@ -162,67 +168,381 @@
                     "Confluence",
                     "SonarQube"
                 ]
-            }
-        }
-    ],
-    "projects": [
-        {
-            "id": 1,
-            "title": "",
-            "description": "",
-            "type": "personal|professional|open-source",
-            "status": "completed|in-progress|planned",
-            "start_date": "",
-            "end_date": "",
-            "tech_stack": [],
-            "features": [],
-            "challenges": [],
-            "outcomes": [],
-            "links": {
-                "repository": "",
-                "live_demo": "",
-                "documentation": ""
             },
-            "images": []
+            "projects": [
+                "W5",
+                "W6"
+            ]
         }
     ],
-    "tech_stack": {
-        "programming_languages": [],
-        "frameworks_libraries": [],
-        "databases": [],
-        "cloud_platforms": [],
-        "development_tools": [],
-        "version_control": [],
-        "operating_systems": [],
-        "other_technologies": []
-    },
-    "skills": {
-        "technical": [
+    "projects": {
+        "types": [
             {
-                "category": "",
-                "items": []
+                "type": "personal",
+                "identifier": "P",
+                "example": {
+                    "id": "1P"
+                }
+            },
+            {
+                "type": "work",
+                "identifier": "W",
+                "example": {
+                    "id": "1W"
+                }
+            },
+            {
+                "type": "open-source",
+                "identifier": "O",
+                "example": {
+                    "id": "1O"
+                }
+            },
+            {
+                "type": "academic",
+                "identifier": "A",
+                "example": {
+                    "id": "1A"
+                }
             }
         ],
-        "soft_skills": [],
-        "languages": [
+        "academic": [
             {
-                "language": "",
-                "proficiency": "native|fluent|intermediate|basic"
+                "id": "A1",
+                "title": "Air Draw",
+                "description": "Draw in the air with hand gestures",
+                "details": [
+                    "Captures hand gestures via webcam and converts them into digital sketches",
+                    "Recognizes sketches with up to 99% accuracy using machine learning",
+                    "Suggests visually similar objects with confidence scores",
+                    "Provides real-time, interactive air drawing without physical input devices"
+                ],
+                "start": "2021-01",
+                "end": "2021-04",
+                "status": "completed",
+                "tech_stack": [
+                    "Python",
+                    "OpenCV",
+                    "Machine Learning",
+                    "Python",
+                    "Computer Vision"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            },
+            {
+                "id": "A2",
+                "title": "Lip Reading using Deep Neural Network",
+                "description": "Analyzes lip movements and speech to convert spoken words into text in real time",
+                "details": [
+                    "Interprets spoken words from lip movements in real time",
+                    "Detects face and lips accurately using DLib Library",
+                    "Recognizes words with CNN-based feature extraction",
+                    "Processes video frames to track lip patterns and predict speech",
+                    "Supports common words, short phrases, and simple sentences"
+                ],
+                "start": "2021-09",
+                "end": "2022-03",
+                "status": "completed",
+                "tech_stack": [
+                    "Deep Neural Network",
+                    "Python",
+                    "Computer Vision",
+                    "Natural Language Processing",
+                    "Real-time Processing"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
             }
+        ],
+        "work": [
+            {
+                "id": "W1",
+                "title": "Banking Application Development",
+                "description": "Enterprise banking applications with secure authentication and scalable architecture",
+                "details": [],
+                "start": "2022-08",
+                "end": "2022-11",
+                "status": "ongoing",
+                "tech_stack": [
+                    "Java",
+                    "Spring Boot",
+                    "Rest API",
+                    "MySQL",
+                    "React"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            },
+            {
+                "id": "W2",
+                "title": "SWIFT Network - Message Management System",
+                "description": "High-performance Kafka-based system for managing large message volumes in Swift Network interactions",
+                "details": [
+                    "Engineered Kafka-based system to seamlessly manage large message volumes in Swift Network interactions",
+                    "Implemented microservices architecture with Spring Boot to enhance modularity and scalability"
+                ],
+                "start": "2022-11",
+                "end": "2023-05",
+                "status": "ongoing",
+                "tech_stack": [
+                    "Java",
+                    "Spring Boot",
+                    "Kafka",
+                    "Microservices",
+                    "Python",
+                    "PostgreSQL",
+                    "Bash"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            },
+            {
+                "id": "W3",
+                "title": "Intelligent QA",
+                "description": "Automated testing framework for quality assurance with intelligent test generation",
+                "details": [
+                    "Created a tool for generating Selenium test scripts from web urls using AI"
+                ],
+                "start": "2023-01",
+                "end": "2023-06",
+                "status": "ongoing",
+                "tech_stack": [
+                    "Python",
+                    "Django",
+                    "Django REST Framework",
+                    "Java",
+                    "Selenium",
+                    "OpenAI",
+                    "AWS Bedrock",
+                    "MySQL",
+                    "SQLite"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            },
+            {
+                "id": "W4",
+                "title": "Accelerators",
+                "description": "AI-powered system for intelligent document processing with Q&A capabilities",
+                "details": [
+                    "Built asynchronous data pipelines using Azure Form Recognizer, AWS Textract, and Generative AI",
+                    "Developed real-time chatbot with AWS Bedrock and OpenAI APIs for document Q&A"
+                ],
+                "start": "2022-07",
+                "end": "2023-11",
+                "status": "completed",
+                "tech_stack": [
+                    "Python",
+                    "React",
+                    "Django",
+                    "Django REST Framework",
+                    "Azure Form Recognizer",
+                    "AWS Textract",
+                    "AWS Bedrock",
+                    "OpenAI",
+                    "SQLite",
+                    "MySQL"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            },
+            {
+                "id": "W5",
+                "title": "CoreComponents",
+                "description": "Proprietary NuGet packages to streamline development and enhance functionality across internal applications",
+                "details": [
+                    "Developed and maintained proprietary NuGet packages to support 10+ internal applications",
+                    "Authored 1000+ unittests, significantly lowering bug rates by 35%",
+                    "Automated CI/CD pipelines, decreasing deployment time from 1 hour to 10 minutes"
+                ],
+                "start": "2023-02",
+                "end": "2023-12",
+                "status": "ongoing",
+                "tech_stack": [
+                    ".NET",
+                    "C#",
+                    "NuGet",
+                    "SQL Server",
+                    "ASP.Net"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            },
+            {
+                "id": "W6",
+                "title": "PenneDocs",
+                "description": "A repository of millions of documents",
+                "details": [
+                    "Designed event-driven architecture using AWS Lambda and SQS to decouple ETL processes",
+                    "Implemented serverless document processing pipelines, improving scalability and reducing costs by 40%",
+                    "Enhanced document retrieval speeds by 40% in .NET applications through targeted optimizations",
+                    "Optimized data ingestion workflows, enhancing throughput by 30%",
+                    "Migrated Legacy systems to .NET 8, reducing maintenance overhead by 30%"
+                ],
+                "start": "2023-03",
+                "end": "2023-09",
+                "status": "ongoing",
+                "tech_stack": [
+                    "AWS Lambda",
+                    "AWS SQS",
+                    "SQL Server",
+                    "Stored Procedures",
+                    "Python",
+                    "C#",
+                    ".NET 8",
+                    "Razor Pages",
+                    "ASP.NET Core MVC"
+                ],
+                "links": {
+                    "repository": "",
+                    "documentation": "",
+                    "demo": ""
+                }
+            }
+        ],
+        "open_source": [],
+        "personal": [
+            
+        ]
+    },
+    "tech_stack": {
+        "ai": [
+            "Cursor",
+            "GitHub Copilot",
+            "Gemini",
+            "OpenAI",
+            "Generative AI"
+        ],
+        "programming_languages": [
+            "Python",
+            "C#",
+            "Dart",
+            "JavaScript",
+            "TypeScript",
+            "Java",
+            "Rust",
+            "Bash"
+        ],
+        "frameworks_libraries": [
+            "Flutter",
+            "FastAPI",
+            "Django",
+            "Django REST Framework",
+            "React",
+            "Spring Boot",
+            "ASP.NET Core",
+            "ASP.NET MVC",
+            "Razor Pages",
+            "Blazor",
+            "Kendo UI"
+        ],
+        "databases": [
+            "SQLite",
+            "SQL Server",
+            "PostgreSQL",
+            "MySQL",
+            "MongoDB",
+            "Redis",
+            "Elasticsearch"
+        ],
+        "cloud_platforms": [
+            "AWS",
+            "Azure",
+            "Google Cloud",
+            "Supabase",
+            "Firebase"
+        ],
+        "development_tools": [
+            "Git",
+            "GitHub Actions",
+            "Docker",
+            "Postman",
+            "Bruno",
+            "Swagger",
+            "New Relic",
+            "SonarQube",
+            "Jira",
+            "Confluence",
+            "Figma"
+        ],
+        "version_control": [
+            "Git",
+            "TFVC"
+        ],
+        "operating_systems": [],
+        "other_technologies": [
+            "Microservices",
+            "RESTful APIs",
+            "Serverless Architecture",
+            "Event-Driven Architecture",
+            "CI/CD",
+            "Unit Testing"
         ]
     },
     "education": [
         {
-            "institution": "",
-            "degree": "",
+            "id": 1,
+            "institution": "Holy Cross English High School, Nirmal",
+            "website": "https://holycrossenglishnirmal.com/",
+            "degree": "Secondary School Certificate (SSC)",
             "field_of_study": "",
-            "location": "",
-            "start_date": "",
-            "end_date": "",
-            "gpa": "",
+            "location": "Vasai, Maharashtra, India",
+            "completed_year": "2015",
+            "score": "88.20%",
             "relevant_coursework": [],
             "achievements": [],
             "projects": []
+        },
+        {
+            "id": 2,
+            "institution": "Bhausaheb Vartak Polytechnic",
+            "website": "https://vbvp.edu.in/",
+            "degree": "Diploma",
+            "field_of_study": "Computer Technology",
+            "location": "Vasai, Maharashtra, India",
+            "completed_year": "2019",
+            "score": "75.75%",
+            "relevant_coursework": [],
+            "achievements": [],
+            "projects": []
+        },
+        {
+            "id": 3,
+            "institution": "St. John College of Engineering and Management",
+            "website": "https://www.sjcem.edu.in/",
+            "degree": "Bachelor of Engineering (B.E.)",
+            "field_of_study": "Computer Engineering",
+            "location": "Palghar, Maharashtra, India",
+            "completed_year": "2022",
+            "score": "8.32 CGPA",
+            "relevant_coursework": [],
+            "achievements": [],
+            "projects": [
+                "A1",
+                "A2"
+            ]
         }
     ],
     "certifications": [
@@ -283,7 +603,9 @@
         ],
         "personal_hobbies": [
             "Traveling",
-            "Books",
+            "Audio Books",
+            "Anime",
+            "Manga",
             "DIY"
         ],
         "volunteer_work": [],
@@ -311,7 +633,7 @@
             "Cloud"
         ],
         "career_goals": "",
-        "availability": ""
+        "availability": true
     },
     "metadata": {
         "version": "1.0.0",
