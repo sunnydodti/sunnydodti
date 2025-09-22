@@ -4,13 +4,13 @@
         "title": "Software Developer",
         "about": "Developer at heart. Building apps & Solving problems is my hobby",
         "location": "Mumbai, India",
-        "email": "sunnydodti.dev@example.com",
+        "email": "sunnydodti.dev@gmail.com",
         "phone": null
     },
     "links": {
-        "website": "sunny.persist.site",
-        "portfolio": "https://sunnydodti.dev",
-        "resume": "sunnydodti.dev@example.com",
+        "website": "https://sunny.persist.site",
+        "portfolio": "https://sunny.persist.site",
+        "resume": "https://github.com/sunnydodti/resume/blob/main/Sunny_Dodti.pdf",
         "github": "https://github.com/sunnydodti/",
         "linkedin": "https://www.linkedin.com/in/sunnydodti/"
     },
@@ -424,7 +424,178 @@
         ],
         "open_source": [],
         "personal": [
-            
+            {
+                "id": "P1",
+                "title": "Expense Tracker",
+                "description": "AI-powered personal finance management app with data visualization and smart alerts",
+                "details": [
+                    "AI-powered personal finance management with data visualization & smart alerts",
+                    "Bill scanning & automation for repeating expenses with budget planning and multi-profile management"
+                ],
+                "start": "2024-01",
+                "end": "",
+                "status": "ongoing",
+                "tech_stack": [
+                    "Flutter",
+                    "Dart",
+                    "AI",
+                    "SQLite",
+                    "Gemini",
+                    "Provider",
+                    "fl_chart"
+                ],
+                "availability": [
+                    "Android",
+                    "Web",
+                    "Windows"
+                ],
+                "links": {
+                    "repository": "https://github.com/sunnydodti/expense-tracker",
+                    "documentation": "",
+                    "demo": "https://expense-tracker.persist.site",
+                    "download": "https://github.com/sunnydodti/expense-tracker/releases/latest"
+                }
+            },
+            {
+                "id": "P2",
+                "title": "URL Shortener",
+                "description": "Simple URL shortening service built with Flutter, Hono & Neon DB",
+                "details": [
+                    "Clean and efficient URL shortening service",
+                    "Built with modern stack: Flutter frontend, Hono backend, and Neon DB"
+                ],
+                "start": "2025-03",
+                "end": "2025-03",
+                "status": "completed",
+                "tech_stack": [
+                    "Flutter",
+                    "Dart",
+                    "Hono",
+                    "Hive NoSQL",
+                    "Neon DB",
+                    "PostgreSQL",
+                    "Cloudflare Workers"
+                ],
+                "availability": [
+                    "Android",
+                    "Web"
+                ],
+                "links": {
+                    "repository": "https://github.com/sunnydodti/url-shortner",
+                    "documentation": "",
+                    "demo": "https://urls.persist.site",
+                    "download": "https://github.com/sunnydodti/url-shortner/releases/latest"
+                }
+            },
+            {
+                "id": "P3",
+                "title": "Authenticator",
+                "description": "Secure 2FA mobile app built with Flutter and SQLite",
+                "details": [
+                    "Secure TOTP authentication & secure token storage with QR code scanning",
+                    "Folders for grouping accounts for easy access"
+                ],
+                "start": "2024-12",
+                "end": "2025-01",
+                "status": "completed",
+                "tech_stack": [
+                    "Flutter",
+                    "SQLite",
+                    "Mobile Development",
+                    "Security",
+                    "TOTP"
+                ],
+                "availability": [
+                    "Android",
+                    "Web"
+                ],
+                "links": {
+                    "repository": "https://github.com/sunnydodti/authenticator",
+                    "documentation": "",
+                    "demo": "https://authenticator.persist.site",
+                    "download": "https://github.com/sunnydodti/authenticator/releases/latest"
+                }
+            },
+            {
+                "id": "P4",
+                "title": "PearPin - Password Generator",
+                "description": "Secure password generation tool",
+                "details": [
+                    "Generate secure passwords with customizable parameters"
+                ],
+                "start": "2024",
+                "end": "2024",
+                "status": "completed",
+                "tech_stack": [
+                    "Web Development",
+                    "Security"
+                ],
+                "availability": [
+                    "Android",
+                    "Web"
+                ],
+                "links": {
+                    "repository": "https://github.com/sunnydodti/pearpin",
+                    "documentation": "",
+                    "demo": "https://pearpin.persist.site",
+                    "download": "https://github.com/sunnydodti/pearpin/releases/latest"
+                }
+            },
+            {
+                "id": "P5",
+                "title": "KiwiClock - Cloud Timer",
+                "description": "Cloud-based timer application",
+                "details": [
+                    "Online timer with cloud synchronization capabilities"
+                ],
+                "start": "2024",
+                "end": "2024",
+                "status": "completed",
+                "tech_stack": [
+                    "Flutter",
+                    "Dart",
+                    "Supabase",
+                    "Progressive Web App (PWA)"
+                ],
+                "availability": [
+                    "Android",
+                    "Web"
+                ],
+                "links": {
+                    "repository": "https://github.com/sunnydodti/kiwiclock",
+                    "documentation": "",
+                    "demo": "https://kiwiclock.persist.site",
+                    "download": "https://github.com/sunnydodti/kiwiclock/releases/latest"
+                }
+            },
+            {
+                "id": "P7",
+                "title": "Currency Converter",
+                "description": "Real-time currency conversion tool",
+                "details": [
+                    "Convert currencies with real-time exchange rates",
+                    "one day project completed in 8 hours - design, development, testing & deployment"
+                ],
+                "start": "2025-02",
+                "end": "2025-02",
+                "status": "completed",
+                "tech_stack": [
+                    "Flutter",
+                    "Dart",
+                    "API Integration",
+                    "Progressive Web App (PWA)"
+                ],
+                "availability": [
+                    "Android",
+                    "Web"
+                ],
+                "links": {
+                    "repository": "https://github.com/sunnydodti/currency_converter",
+                    "documentation": "",
+                    "demo": "https://sunnydodti.github.io/currency_converter",
+                    "download": "https://github.com/sunnydodti/currency_converter/releases/latest"
+                }
+            }
         ]
     },
     "tech_stack": {
