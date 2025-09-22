@@ -1,0 +1,34 @@
+lets plan a way for me to make my portfolio
+
+I want the data for my portfolio to be stored in a json format
+    path - E:\projects\repos\sunnydodti\data\profiles\default.json
+
+its possible that i will have multiple profiles in the future
+    path - E:\projects\repos\sunnydodti\data\profiles\profile1.json
+    path - E:\projects\repos\sunnydodti\data\profiles\profile2.json
+
+the default profile contain everything about me and be the single source of truth for my portfolio
+the other profiles will be used to showcase different aspects of my work or different versions of my profiles
+
+
+now I want to design my portfolio front end in many different technologies flutter, react, angular, etc
+
+domain (sunnydodti.com and sunydodti.persist.site)
+
+default will be react - deployed to default domain
+I want to have same portfolio created in different technologies and have them deployed to sub domain
+eg1 - flutter - same portfoolio made is flutter
+    deployed to (flutter.sunnydodti.com and flutter.sunydodti.persist.site)
+eg2 - react - same portfoolio made is react
+    deployed to (react.sunnydodti.com and react.sunydodti.persist.site)
+
+each portfolio will have links to these subdomain.
+I will have different repos created for each and have them added as git submodules in this repo under /portfolio folder
+eg - portfolio/portfolio-react
+    portfolio/portfolio-flutter
+    portfolio/portfolio-angular
+
+
+I want a detailed plan no how I can go about doing this and whant needs to be done
+plan out everything and put it in the copilot instructions file
+I will think of implementation once planning is done
