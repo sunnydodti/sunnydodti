@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Dodti Portfolio - Color Palette Demo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* Light Mode Colors */
+            --primary-50: #eff6ff;
+            --primary-100: #dbeafe;
+            --primary-200: #bfdbfe;
+            --primary-300: #93c5fd;
+            --primary-400: #60a5fa;
+            --primary-500: #3b82f6;
+            --primary-600: #2563eb;
+            --primary-700: #1d4ed8;
+            --primary-800: #1e40af;
+            --primary-900: #1e3a8a;
+
+            --bg-primary: #ffffff;
+            --bg-secondary: #f8fafc;
+            --bg-tertiary: #f1f5f9;
+
+            --surface-primary: #ffffff;
+            --surface-secondary: #f8fafc;
+            --surface-elevated: #ffffff;
+            --surface-card: #ffffff;
+
+            --text-primary: #0f172a;
+            --text-secondary: #475569;
+            --text-tertiary: #64748b;
+            --text-inverse: #ffffff;
+
+            --border-primary: #e2e8f0;
+            --border-secondary: #cbd5e1;
+            --border-focus: #3b82f6;
+
+            --accent-blue: #3b82f6;
+            --accent-success: #10b981;
+            --accent-warning: #f59e0b;
+            --accent-error: #ef4444;
+
+            --gradient-hero: linear-gradient(135deg, #eff6ff 0%, #dbeafe 50%, #bfdbfe 100%);
+            --gradient-card: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+            --gradient-button: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+
+            --shadow-sm: 0 1px 2px 0 rgba(59, 130, 246, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(59, 130, 246, 0.1), 0 2px 4px -1px rgba(59, 130, 246, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(59, 130, 246, 0.1), 0 4px 6px -2px rgba(59, 130, 246, 0.05);
+        }
+
+        [data-theme="dark"] {
+            /* Dark Mode Colors */
+            --primary-50: #1e3a8a;
+            --primary-100: #1e40af;
+            --primary-200: #1d4ed8;
+            --primary-300: #2563eb;
+            --primary-400: #3b82f6;
+            --primary-500: #60a5fa;
+            --primary-600: #93c5fd;
+            --primary-700: #bfdbfe;
+            --primary-800: #dbeafe;
+            --primary-900: #eff6ff;
+
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+
+            --surface-primary: #1e293b;
+            --surface-secondary: #334155;
+            --surface-elevated: #475569;
+            --surface-card: #1e293b;
+
+            --text-primary: #f8fafc;
+            --text-secondary: #e2e8f0;
+            --text-tertiary: #cbd5e1;
+            --text-inverse: #0f172a;
+
+            --border-primary: #334155;
+            --border-secondary: #475569;
+            --border-focus: #60a5fa;
+
+            --accent-blue: #60a5fa;
+            --accent-success: #34d399;
+            --accent-warning: #fbbf24;
+            --accent-error: #f87171;
+
+            --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            --gradient-card: linear-gradient(145deg, #1e293b 0%, #334155 100%);
+            --gradient-button: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            background: var(--gradient-hero);
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--gradient-button);
+            border: none;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .color-card {
+            background: var(--gradient-card);
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
+        }
+
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .color-card h3 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .color-swatch {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background: var(--surface-secondary);
+        }
+
+        .color-preview {
+            width: 40px;
+            height: 40px;
+            border-radius: 0.5rem;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid var(--border-primary);
+        }
+
+        .color-info {
+            flex: 1;
+        }
+
+        .color-name {
+            font-weight: 500;
+            color: var(--text-primary);
+            font-size: 0.875rem;
+        }
+
+        .color-value {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--text-tertiary);
+            font-size: 0.75rem;
+        }
+
+        .component-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .component-card {
+            background: var(--gradient-card);
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-primary);
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            margin: 0.5rem;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: var(--gradient-button);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: var(--surface-secondary);
+            color: var(--text-primary);
+            border: 1px solid var(--border-primary);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--accent-blue);
+            border: 2px solid var(--accent-blue);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-example {
+            background: var(--surface-card);
+            border: 1px solid var(--border-primary);
+            border-radius: 0.75rem;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .card-example h4 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .card-example p {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .text-showcase {
+            margin: 1rem 0;
+        }
+
+        .text-showcase h1,
+        .text-showcase h2,
+        .text-showcase h3 {
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .text-showcase p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .text-showcase .text-tertiary {
+            color: var(--text-tertiary);
+            font-size: 0.875rem;
+        }
+
+        .accent-showcase {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .accent-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .badge-blue {
+            background: var(--accent-blue);
+        }
+
+        .badge-success {
+            background: var(--accent-success);
+        }
+
+        .badge-warning {
+            background: var(--accent-warning);
+        }
+
+        .badge-error {
+            background: var(--accent-error);
+        }
+    </style>
+</head>
+
+<body data-theme="light">
+    <button class="theme-toggle" id="themeToggle">🌙</button>
+
+    <div class="container">
+        <div class="header">
+            <h1>Sunny Dodti Portfolio</h1>
+            <p>Blue-Themed Color Palette & Design System</p>
+        </div>
+
+        <div class="section">
+            <h2>Primary Blue Colors</h2>
+            <div class="color-grid">
+                <div class="color-card">
+                    <h3>Light Blues</h3>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-50);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 50</div>
+                            <div class="color-value">#eff6ff</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-100);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 100</div>
+                            <div class="color-value">#dbeafe</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-200);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 200</div>
+                            <div class="color-value">#bfdbfe</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <h3>Core Blues</h3>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-400);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 400</div>
+                            <div class="color-value">#60a5fa</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-500);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 500</div>
+                            <div class="color-value">#3b82f6</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-600);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 600</div>
+                            <div class="color-value">#2563eb</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="color-card">
+                    <h3>Deep Blues</h3>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-700);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 700</div>
+                            <div class="color-value">#1d4ed8</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-800);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 800</div>
+                            <div class="color-value">#1e40af</div>
+                        </div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-preview" style="background: var(--primary-900);"></div>
+                        <div class="color-info">
+                            <div class="color-name">Primary 900</div>
+                            <div class="color-value">#1e3a8a</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Component Showcase</h2>
+            <div class="component-showcase">
+                <div class="component-card">
+                    <h3>Buttons</h3>
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                </div>
+
+                <div class="component-card">
+                    <h3>Cards</h3>
+                    <div class="card-example">
+                        <h4>Project Card</h4>
+                        <p>This is an example of how cards will look in your portfolio with the blue theme.</p>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h3>Typography</h3>
+                    <div class="text-showcase">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <p>Primary text content will look like this.</p>
+                        <p class="text-tertiary">Secondary text for descriptions and metadata.</p>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h3>Accent Colors</h3>
+                    <div class="accent-showcase">
+                        <span class="accent-badge badge-blue">Blue</span>
+                        <span class="accent-badge badge-success">Success</span>
+                        <span class="accent-badge badge-warning">Warning</span>
+                        <span class="accent-badge badge-error">Error</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Portfolio Sections Preview</h2>
+            <div class="component-showcase">
+                <div class="component-card">
+                    <h3>Hero Section</h3>
+                    <div
+                        style="background: var(--gradient-hero); padding: 2rem; border-radius: 0.75rem; text-align: center;">
+                        <h2>Sunny Dodti</h2>
+                        <p>Software Developer</p>
+                        <button class="btn btn-primary" style="margin-top: 1rem;">View Projects</button>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h3>Experience Card</h3>
+                    <div class="card-example">
+                        <h4>Software Engineer @ Xoriant</h4>
+                        <p class="text-tertiary">2023 - Present</p>
+                        <p>Led migration to serverless architecture, cutting infrastructure costs by 40%. Implemented
+                            secure role-based authentication for 20,000+ users.</p>
+                    </div>
+                </div>
+
+                <div class="component-card">
+                    <h3>Project Card</h3>
+                    <div class="card-example">
+                        <h4>Expense Tracker</h4>
+                        <p class="text-tertiary">Flutter • AI • Mobile Development</p>
+                        <p>AI-powered personal finance management app with data visualization and smart alerts.</p>
+                        <div style="margin-top: 1rem;">
+                            <span class="accent-badge badge-blue">Flutter</span>
+                            <span class="accent-badge badge-success">AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+
+            body.setAttribute('data-theme', newTheme);
+            themeToggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
+
+            // Save preference
+            localStorage.setItem('portfolio-theme', newTheme);
+        });
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('portfolio-theme') || 'light';
+        body.setAttribute('data-theme', savedTheme);
+        themeToggle.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+    </script>
+</body>
+
+</html>

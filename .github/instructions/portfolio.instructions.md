@@ -51,26 +51,61 @@ const transformedData = transformForTechnology(profile, "react");
 
 ## 🎨 Design System Guidelines
 
-### Theme Consistency
+### Blue-Themed Color System
+
+**Primary Color Source**: `/data/styles/style.json` - Complete blue-themed palette with dark/light mode support
 
 ```json
 {
-  "colors": {
-    "primary": "#2563eb",
-    "secondary": "#64748b",
-    "accent": "#f59e0b"
+  "light_mode": {
+    "primary": "#3b82f6",
+    "background": "#ffffff",
+    "surface": "#f8fafc",
+    "text": "#0f172a"
   },
-  "typography": {
-    "heading": "Inter",
-    "body": "Inter"
+  "dark_mode": {
+    "primary": "#60a5fa",
+    "background": "#0f172a",
+    "surface": "#1e293b",
+    "text": "#f8fafc"
   }
 }
 ```
 
+**Interactive Demo**: `/data/styles/pallet-demo-dark-light.html` - Live preview with theme toggle
+
+### Design Tokens (CRITICAL)
+
+**ALL portfolio implementations MUST use design tokens from `/data/styles/style.json` for consistency:**
+
+```css
+/* Web Technologies: Use CSS variables */
+.component {
+  background: var(--color-background-primary);
+  color: var(--color-text-primary);
+  padding: var(--spacing-lg);
+}
+```
+
+```dart
+/* Flutter: Use color constants */
+Container(
+  color: PortfolioColors.backgroundLight,
+  padding: EdgeInsets.all(PortfolioSpacing.lg),
+  child: Text(
+    'Content',
+    style: TextStyle(color: PortfolioColors.textLight),
+  ),
+)
+```
+
 ### Component Standards
 
+- **Design Tokens**: NEVER use hardcoded colors - always use design tokens from style.json
+- **Theme Switching**: Light/dark mode using technology-appropriate methods
 - **Responsive Design**: Mobile-first approach
 - **Accessibility**: WCAG 2.1 AA compliance
+- **Consistency**: Same colors across all technologies
 - **Performance**: Lighthouse score 95+
 - **Consistency**: Same sections across all technologies
 

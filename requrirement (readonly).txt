@@ -1,11 +1,13 @@
+----- v1 -----
+
 lets plan a way for me to make my portfolio
 
 I want the data for my portfolio to be stored in a json format
-    path - E:\projects\repos\sunnydodti\data\profiles\default.json
+    path - data/profiles/default.json
 
 its possible that i will have multiple profiles in the future
-    path - E:\projects\repos\sunnydodti\data\profiles\profile1.json
-    path - E:\projects\repos\sunnydodti\data\profiles\profile2.json
+    path - data/profiles/profile1.json
+    path - data/profiles/profile2.json
 
 the default profile contain everything about me and be the single source of truth for my portfolio
 the other profiles will be used to showcase different aspects of my work or different versions of my profiles
@@ -32,3 +34,9 @@ eg - portfolio/portfolio-react
 I want a detailed plan no how I can go about doing this and whant needs to be done
 plan out everything and put it in the copilot instructions file
 I will think of implementation once planning is done
+
+
+----- v2 -----
+styles
+consistant styles throught the profolio with data/styles/style.json
+use variables for loading and storing the color pallet informations 
