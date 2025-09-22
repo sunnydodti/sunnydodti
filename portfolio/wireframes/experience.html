@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Portfolio Wireframe</title>
+    <style>
+        /* Dark Theme Wireframe - Based on Reference Design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            min-height: 100vh;
+            overflow: hidden;
+            /* Single viewport - no scrolling */
+        }
+
+        /* Left Sidebar Navigation - Same as home */
+        .sidebar {
+            width: 240px;
+            background: #2a2a2a;
+            border: 2px solid #444;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .profile-header {
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #555;
+            background: #333;
+            margin: 10px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #666;
+            margin: 0 auto 10px;
+            border: 2px solid #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .nav-menu {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .nav-item {
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: 2px solid #555;
+            background: #3a3a3a;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-item.active {
+            background: #4a90e2;
+            border-color: #6bb6ff;
+        }
+
+        .sidebar-footer {
+            padding: 15px;
+            border-top: 2px solid #555;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #666;
+            background: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+
+        .footer-text {
+            font-size: 9px;
+            color: #999;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            border: 2px solid #444;
+            background: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Top Navigation Bar */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 6px;
+        }
+
+        .nav-arrows {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-button {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #666;
+            background: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .top-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-btn {
+            padding: 8px 12px;
+            border: 2px solid #666;
+            background: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .resume-btn {
+            background: #4a90e2;
+            border-color: #6bb6ff;
+        }
+
+        /* Experience Content */
+        .experience-content {
+            flex: 1;
+            overflow-y: auto;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 6px;
+        }
+
+        .section-icon {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #666;
+            background: #444;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Experience Cards - Based on Reference */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .experience-card {
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #666;
+            background: #444;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            flex-shrink: 0;
+        }
+
+        .experience-info {
+            flex: 1;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .company-name {
+            font-size: 14px;
+            color: #4a90e2;
+            margin-bottom: 3px;
+        }
+
+        .job-duration {
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .expand-icon {
+            width: 25px;
+            height: 25px;
+            border: 2px solid #666;
+            background: #444;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        /* Expandable Details */
+        .experience-details {
+            border-top: 2px solid #555;
+            background: #333;
+            display: none;
+            /* Initially hidden */
+        }
+
+        .details-tabs {
+            display: flex;
+            border-bottom: 2px solid #555;
+        }
+
+        .tab {
+            padding: 12px 20px;
+            border-right: 2px solid #555;
+            background: #3a3a3a;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .tab.active {
+            background: #4a90e2;
+        }
+
+        .tab-content {
+            padding: 20px;
+        }
+
+        .responsibility-list {
+            list-style: none;
+        }
+
+        .responsibility-item {
+            margin: 10px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid #555;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tech-tag {
+            padding: 6px 10px;
+            border: 2px solid #666;
+            background: #444;
+            border-radius: 12px;
+            font-size: 11px;
+        }
+
+        /* Show details when expanded */
+        .experience-card.expanded .experience-details {
+            display: block;
+        }
+
+        .experience-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="profile-header">
+            <div class="profile-pic">[IMG]</div>
+            <div class="profile-name">Sunny Dodti</div>
+            <div class="profile-title">Software Developer</div>
+        </div>
+
+        <nav class="nav-menu">
+            <div class="nav-item">👤 ABOUT ME</div>
+            <div class="nav-item active">💼 EXPERIENCE</div>
+            <div class="nav-item">📂 PROJECTS</div>
+            <div class="nav-item">⚡ TECH STACK</div>
+            <div class="nav-item">📧 CONTACT ME</div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <div class="social-icon">IN</div>
+                <div class="social-icon">GH</div>
+                <div class="social-icon">X</div>
+                <div class="social-icon">📄</div>
+            </div>
+            <div class="footer-text">
+                Made with ❤️ by Sunny<br>
+                Copy Right © Sunny Dodti
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="nav-arrows">
+                <button class="nav-button">←</button>
+                <span class="page-title">EXPERIENCE</span>
+                <button class="nav-button">→</button>
+            </div>
+            <div class="top-buttons">
+                <button class="top-btn">🌓 READ ME</button>
+                <button class="top-btn">⭐ ASK ME</button>
+                <button class="top-btn resume-btn">📄 RESUME</button>
+            </div>
+        </header>
+
+        <!-- Experience Content -->
+        <div class="experience-content">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="section-icon">💼</div>
+                <h1 class="section-title">Work Experience</h1>
+            </div>
+
+            <!-- Experience List -->
+            <div class="experience-list">
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">[WCT]</div>
+                        <div class="experience-info">
+                            <div class="job-title">Software Engineer</div>
+                            <div class="company-name">Waferwire Cloud Technologies (Client: Microsoft) 🔗</div>
+                            <div class="job-duration">Feb 2025 - Present | Hyderabad, India</div>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="experience-details">
+                        <div class="details-tabs">
+                            <div class="tab active">KEY RESPONSIBILITIES</div>
+                            <div class="tab">TECH STACK</div>
+                        </div>
+                        <div class="tab-content">
+                            <ul class="responsibility-list">
+                                <li class="responsibility-item">
+                                    • Enhanced API performance for Microsoft's FHIR Service repository, improving
+                                    response times by 20% and reducing client-reported issues by 35%
+                                </li>
+                                <li class="responsibility-item">
+                                    • Integrated third-party IDP authentication using Azure B2C, increasing flexibility
+                                    by 40% and streamlining user onboarding
+                                </li>
+                                <li class="responsibility-item">
+                                    • Implemented OAuth 2.0 flows (client credentials, authorization code, PKCE),
+                                    reducing login failures by 30%
+                                </li>
+                                <li class="responsibility-item">
+                                    • Improved Azure VNet integration with private endpoints and custom ingress/egress
+                                    rules, enhancing deployment performance by 25%
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Card 2 -->
+                <div class="experience-card expanded">
+                    <div class="experience-header">
+                        <div class="company-logo">[XOR]</div>
+                        <div class="experience-info">
+                            <div class="job-title">Software Engineer</div>
+                            <div class="company-name">Xoriant Solutions (Client: Microsoft) 🔗</div>
+                            <div class="job-duration">Aug 2023 - Feb 2025 | Mumbai, India</div>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                    <div class="experience-details">
+                        <div class="details-tabs">
+                            <div class="tab active">KEY RESPONSIBILITIES</div>
+                            <div class="tab">TECH STACK</div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tech-tags">
+                                <div class="tech-tag">C#</div>
+                                <div class="tech-tag">.NET</div>
+                                <div class="tech-tag">Azure</div>
+                                <div class="tech-tag">Docker</div>
+                                <div class="tech-tag">Kubernetes</div>
+                                <div class="tech-tag">OAuth 2.0</div>
+                                <div class="tech-tag">FHIR</div>
+                                <div class="tech-tag">REST APIs</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Card 3 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">[XOR]</div>
+                        <div class="experience-info">
+                            <div class="job-title">Associate Software Engineer</div>
+                            <div class="company-name">Xoriant Solutions 🔗</div>
+                            <div class="job-duration">Jun 2022 - Jul 2023 | Mumbai, India</div>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                </div>
+
+                <!-- Experience Card 4 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo">[YIE]</div>
+                        <div class="experience-info">
+                            <div class="job-title">MERN Developer Intern</div>
+                            <div class="company-name">Youth India E-School 🔗</div>
+                            <div class="job-duration">Aug 2021 – Oct 2021 | Remote, India</div>
+                        </div>
+                        <div class="expand-icon">▼</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

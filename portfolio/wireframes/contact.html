@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio Wireframe</title>
+    <style>
+        /* Dark Theme Wireframe - Based on Reference Design */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            min-height: 100vh;
+            overflow: hidden;
+            /* Single viewport - no scrolling */
+        }
+
+        /* Left Sidebar Navigation - Same Structure */
+        .sidebar {
+            width: 240px;
+            background: #2a2a2a;
+            border: 2px solid #444;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        .profile-header {
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #555;
+            background: #333;
+            margin: 10px;
+        }
+
+        .profile-pic {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #666;
+            margin: 0 auto 10px;
+            border: 2px solid #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .nav-menu {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .nav-item {
+            margin: 8px 0;
+            padding: 12px 15px;
+            border: 2px solid #555;
+            background: #3a3a3a;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        .nav-item.active {
+            background: #4a90e2;
+            border-color: #6bb6ff;
+        }
+
+        .sidebar-footer {
+            padding: 15px;
+            border-top: 2px solid #555;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 15px;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #666;
+            background: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            font-size: 10px;
+        }
+
+        .footer-text {
+            font-size: 9px;
+            color: #999;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+            border: 2px solid #444;
+            background: #1e1e1e;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Navigation Bar */
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 6px;
+        }
+
+        .nav-arrows {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-button {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #666;
+            background: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .top-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .top-btn {
+            padding: 8px 12px;
+            border: 2px solid #666;
+            background: #333;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .resume-btn {
+            background: #4a90e2;
+            border-color: #6bb6ff;
+        }
+
+        /* Contact Content */
+        .contact-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Let's Connect Section - Based on Reference */
+        .connect-section {
+            text-align: center;
+            padding: 30px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 8px;
+        }
+
+        .connect-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .connect-description {
+            font-size: 14px;
+            color: #ccc;
+            line-height: 1.5;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Cards Grid */
+        .contact-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .contact-card {
+            padding: 25px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .email-icon {
+            background: #e74c3c;
+            border: 2px solid #c0392b;
+        }
+
+        .location-icon {
+            background: #3498db;
+            border: 2px solid #2980b9;
+        }
+
+        .contact-icon {
+            font-size: 20px;
+            color: white;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-value {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .email-link {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        /* Social Media Section - Based on Reference */
+        .social-section {
+            text-align: center;
+            padding: 25px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            border-radius: 8px;
+        }
+
+        .social-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .social-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #666;
+            background: #444;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #4a90e2;
+            border-color: #6bb6ff;
+        }
+
+        /* LinkedIn */
+        .linkedin {
+            background: #0077b5;
+            border-color: #005885;
+        }
+
+        /* GitHub */
+        .github {
+            background: #333;
+            border-color: #555;
+        }
+
+        /* Twitter/X */
+        .twitter {
+            background: #1da1f2;
+            border-color: #0d8bd9;
+        }
+
+        /* Resume/CV */
+        .resume {
+            background: #6c757d;
+            border-color: #545b62;
+        }
+
+        /* Hire Me Button Section */
+        .hire-section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hire-button {
+            padding: 15px 30px;
+            background: #e74c3c;
+            border: 2px solid #c0392b;
+            color: white;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hire-button:hover {
+            background: #c0392b;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left Sidebar Navigation -->
+    <aside class="sidebar">
+        <div class="profile-header">
+            <div class="profile-pic">[IMG]</div>
+            <div class="profile-name">Sunny Dodti</div>
+            <div class="profile-title">Software Developer</div>
+        </div>
+
+        <nav class="nav-menu">
+            <div class="nav-item">👤 ABOUT ME</div>
+            <div class="nav-item">💼 EXPERIENCE</div>
+            <div class="nav-item">📂 PROJECTS</div>
+            <div class="nav-item">⚡ TECH STACK</div>
+            <div class="nav-item active">📧 CONTACT ME</div>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="social-icons">
+                <div class="social-icon">IN</div>
+                <div class="social-icon">GH</div>
+                <div class="social-icon">X</div>
+                <div class="social-icon">📄</div>
+            </div>
+            <div class="footer-text">
+                Made with ❤️ by Sunny<br>
+                Copy Right © Sunny Dodti
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="nav-arrows">
+                <button class="nav-button">←</button>
+                <span class="page-title">CONTACT</span>
+                <button class="nav-button">→</button>
+            </div>
+            <div class="top-buttons">
+                <button class="top-btn">🌓 READ ME</button>
+                <button class="top-btn">⭐ ASK ME</button>
+                <button class="top-btn resume-btn">📄 RESUME</button>
+            </div>
+        </header>
+
+        <!-- Contact Content -->
+        <div class="contact-content">
+            <!-- Let's Connect Section -->
+            <section class="connect-section">
+                <h1 class="connect-title">Let's Connect</h1>
+                <p class="connect-description">
+                    I'm always open to discussing new projects, creative ideas or opportunities to be part of your
+                    visions.
+                </p>
+            </section>
+
+            <!-- Contact Cards -->
+            <div class="contact-cards">
+                <!-- Email Card -->
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper email-icon">
+                        <div class="contact-icon">📧</div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">
+                            <a href="mailto:sunny.dodti@gmail.com" class="email-link">sunny.dodti@gmail.com</a> 📧
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Card -->
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper location-icon">
+                        <div class="contact-icon">📍</div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-label">Location</div>
+                        <div class="contact-value">Mumbai, India</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Section -->
+            <section class="social-section">
+                <h2 class="social-title">Connect with me on social media</h2>
+                <div class="social-grid">
+                    <div class="social-link linkedin">
+                        <span>IN</span>
+                    </div>
+                    <div class="social-link github">
+                        <span>GH</span>
+                    </div>
+                    <div class="social-link twitter">
+                        <span>X</span>
+                    </div>
+                    <div class="social-link resume">
+                        <span>📄</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hire Me Button -->
+            <div class="hire-section">
+                <button class="hire-button">🚀 HIRE ME</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
