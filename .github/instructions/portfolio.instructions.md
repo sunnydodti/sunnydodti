@@ -123,7 +123,7 @@ Container(
 #### React Portfolio
 
 - **Framework**: React 18+ with TypeScript
-- **Styling**: Tailwind CSS for consistency
+- **Styling**: Vanilla CSS with CSS Variables for consistency
 - **State Management**: Context API or Zustand for simple state
 - **Build Tool**: Vite for fast development
 

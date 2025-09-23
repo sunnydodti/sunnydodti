@@ -388,11 +388,11 @@ git submodule add https://github.com/sunnydodti/portfolio-flutter.git portfolio/
 
 **Technology-Specific Standards:**
 
-- **React**: TypeScript, ESLint, Prettier, CSS Variables + Tailwind CSS
+- **React**: TypeScript, ESLint, Prettier, CSS Variables + Vanilla CSS
 - **Flutter**: Dart, flutter_lints, Color constants from style.json, responsive design
 - **Angular**: TypeScript, Angular CLI, CSS Variables + Angular Material
 - **Vue.js**: TypeScript, Vue 3 Composition API, CSS Variables + Pinia
-- **Next.js**: TypeScript, App Router, CSS Variables + Tailwind CSS
+- **Next.js**: TypeScript, App Router, CSS Variables + Vanilla CSS
 - **Svelte**: TypeScript, SvelteKit, CSS Variables + Skeleton UI
 
 ### Testing Strategy
