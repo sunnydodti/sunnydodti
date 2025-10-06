@@ -60,7 +60,7 @@
 
 ###
 
-<h3 align="center">Projects</h3>
+<h3>Projects</h3>
 
 <div align="left">
 
@@ -68,28 +68,32 @@
 
   <ul>
     <li>
-      🚀 <strong>Expense Tracker</strong> – A powerful personal finance <strong>app</strong> with AI-powered bill scanning, smart alerts, and budget planning. <br />
+      <strong>Expense Tracker</strong> – A powerful personal finance <strong>app</strong> with AI-powered bill scanning, smart alerts, and budget planning. <br />
       🔗 <a href="https://expense-tracker.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/expense-tracker" target="_blank">GitHub</a>
     </li>
     <li>
-      🔐 <strong>Authenticator</strong> – A secure 2FA <strong>authenticator app</strong> supporting TOTP, QR code scanning, and offline access with SQLite. <br />
+      <strong>Authenticator</strong> – A secure 2FA <strong>authenticator app</strong> supporting TOTP, QR code scanning, and offline access with SQLite. <br />
       🔗 <a href="https://authenticator.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/authenticator" target="_blank">GitHub</a>
     </li>
     <li>
-      🌐 <strong>URL Shortener</strong> – A minimal, no-login URL shortening <strong>app</strong> built with Flutter and Supabase. <br />
-      🔗 <a href="https://urls.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/url-shortener" target="_blank">GitHub</a>
+      <strong>URL Shortener</strong> – A minimal, no-login URL shortening <strong>app</strong> built with Flutter and Supabase. <br />
+      🔗 <a href="https://urls.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/url-shortner" target="_blank">GitHub</a>
     </li>
     <li>
-      🔑 <strong>PearPin</strong> – A handy <strong>password generator app</strong> with adjustable complexity and a clean UI. <br />
-      🔗 <a href="https://pearpin.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/password-generator" target="_blank">GitHub</a>
+      <strong>Sound Script</strong> – An AI powered <strong>Text to Speech</strong> Application. <br />
+      🔗 <a href="https://soundscript.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/sound-script" target="_blank">GitHub</a>
     </li>
     <li>
-      ⏱️ <strong>KiwiClock</strong> – A simple timer <strong>app</strong> with cloud sync and multi-device support. <br />
+      <strong>Currency Converter</strong> – A clean and minimal web <strong>app</strong> for converting currencies. <br />
+      🔗 <a href="https://sunnydodti.github.io/currency_converter" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/currency_converter" target="_blank">GitHub</a>
+    </li>
+    <li>
+      <strong>KiwiClock</strong> – A simple timer <strong>app</strong> with cloud sync and multi-device support. <br />
       🔗 <a href="https://kiwiclock.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/kiwiclock" target="_blank">GitHub</a>
     </li>
     <li>
-      💱 <strong>Currency Converter</strong> – A clean and minimal web <strong>app</strong> for converting currencies. <br />
-      🔗 <a href="https://sunnydodti.github.io/currency_converter" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/currency_converter" target="_blank">GitHub</a>
+      <strong>PearPin</strong> – A handy <strong>password generator app</strong> with adjustable complexity and a clean UI. <br />
+      🔗 <a href="https://pearpin.persist.site" target="_blank">Web App</a> | <a href="https://github.com/sunnydodti/pearpin" target="_blank">GitHub</a>
     </li>
   </ul>
 
@@ -105,7 +109,7 @@
 
 ###
 
-<p align="center">I'm open for collaborations. Lets Connect</p>
+<p align="center">Want to build something great? Lets Connect!</p>
 
 ###
 
@@ -113,11 +117,11 @@
   <a href="https://www.linkedin.com/in/sunnydodti/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="linkedin logo"  />
   </a>
+  <a href="sunnydodti.dev@gmail.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo"  />
+  </a>
   <a href="https://discord.com/users/294832188049063937" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="discord logo"  />
-  </a>
-  <a href="sunnydodti@gmail.com" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="30" alt="gmail logo"  />
   </a>
 </div>
 
